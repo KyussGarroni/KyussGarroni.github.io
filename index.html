@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Savannah's Wedding – Toronto Wedding Planning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Savannah's Wedding offers romantic and elegant full-service wedding planning in Toronto and the GTA." />
+
+  <!-- Google Font: Crimson Text -->
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --gold: #d4af37;
+      --gold-soft: #e7c96b;
+      --pink: #f7cde1;
+      --pink-soft: #fae3ee;
+      --text-main: #2b2224;
+      --text-muted: #7a6a6f;
+      --bg-main: #ffffff;
+      --bg-soft: #fff9fb;
+      --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.06);
+      --radius-large: 24px;
+      --radius-pill: 999px;
+      --max-width: 1100px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Crimson Text", serif;
+      background: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: radial-gradient(circle at top left, var(--pink-soft), #ffffff 40%);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.9);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.08);
+    }
+
+    .nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .logo-mark {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      background: conic-gradient(from 210deg, var(--gold-soft), var(--pink), #ffffff, var(--gold-soft));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+    }
+
+    .logo-icon span {
+      font-size: 1.1rem;
+      color: #ffffff;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .logo-text-main {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .logo-text-sub {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.25rem;
+      font-size: 0.95rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding-bottom: 0.25rem;
+      color: var(--text-muted);
+      font-size: 0.78rem;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background: linear-gradient(90deg, var(--gold), var(--pink));
+      transition: width 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--text-main);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .nav-cta {
+        display: inline-flex;
+      }
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7rem 1.4rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--gold);
+      font-size: 0.82rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, var(--gold), var(--gold-soft));
+      color: #fff;
+      box-shadow: 0 12px 28px rgba(212, 175, 55, 0.35);
+      cursor: pointer;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .btn span {
+      margin-left: 0.4rem;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 36px rgba(212, 175, 55, 0.45);
+    }
+
+    .btn-outline {
+      background: #fff;
+      color: var(--text-main);
+      box-shadow: none;
+      border: 1px solid rgba(212, 175, 55, 0.5);
+    }
+
+    .btn-outline:hover {
+      background: var(--pink-soft);
+      box-shadow: 0 10px 20px rgba(212, 175, 55, 0.18);
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .section {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3rem 1.5rem 3.5rem;
+    }
+
+    @media (min-width: 900px) {
+      .section {
+        padding: 4rem 1.5rem 4.5rem;
+      }
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr);
+      gap: 2.5rem;
+      align-items: center;
+      padding-top: 2.5rem;
+      padding-bottom: 3.5rem;
+    }
+
+    @media (min-width: 900px) {
+      .hero {
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.9fr);
+        padding-top: 3.5rem;
+        padding-bottom: 4.5rem;
+      }
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.25rem 0.9rem 0.3rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      background: rgba(255, 255, 255, 0.88);
+      font-size: 0.75rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 1.4rem;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: linear-gradient(120deg, var(--gold), var(--pink));
+    }
+
+    .hero-title {
+      font-size: 2.4rem;
+      line-height: 1.1;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero-title {
+        font-size: 3.1rem;
+      }
+    }
+
+    .hero-highlight {
+      display: inline-block;
+      position: relative;
+      padding: 0 0.2rem;
+    }
+
+    .hero-highlight::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0.1rem;
+      width: 100%;
+      height: 55%;
+      background: rgba(247, 205, 225, 0.65);
+      z-index: -1;
+    }
+
+    .hero-text {
+      font-size: 1.02rem;
+      max-width: 28rem;
+      color: var(--text-muted);
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-top: 1.8rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .hero-meta-item span {
+      display: block;
+      font-size: 0.75rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-main);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+    }
+
+    .hero-right {
+      position: relative;
+    }
+
+    .hero-card {
+      background: #fff;
+      border-radius: var(--radius-large);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(212, 175, 55, 0.22);
+      position: relative;
+      overflow: hidden;
+    }
+
+    @media (min-width: 900px) {
+      .hero-card {
+        padding: 1.8rem;
+      }
+    }
+
+    .hero-card-tagline {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .hero-card-main {
+      font-size: 1.18rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .hero-card-strip {
+      font-size: 0.85rem;
+      padding: 0.7rem 1rem;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(120deg, var(--pink-soft), #ffffff);
+      border: 1px dashed rgba(212, 175, 55, 0.55);
+      margin-bottom: 1.1rem;
+    }
+
+    .hero-badge {
+      position: absolute;
+      right: 1.4rem;
+      bottom: 1.4rem;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      padding: 0.5rem 0.85rem;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(135deg, var(--gold), var(--pink));
+      color: #fff;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .hero-floating-card {
+      display: none;
+    }
+
+    @media (min-width: 900px) {
+      .hero-floating-card {
+        display: block;
+        position: absolute;
+        left: -1.2rem;
+        bottom: -1.8rem;
+        background: #fff;
+        padding: 0.9rem 1.1rem;
+        border-radius: 18px;
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.09);
+        font-size: 0.8rem;
+        max-width: 200px;
+        border: 1px solid rgba(247, 205, 225, 0.8);
+      }
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .section-kicker {
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+      font-size: 1.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+
+    .section-subtitle {
+      max-width: 30rem;
+      margin: 0.2rem auto 0;
+      font-size: 0.98rem;
+      color: var(--text-muted);
+    }
+
+    .services-grid {
+      display: grid;
+      gap: 1.4rem;
+      margin-top: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .services-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 20px;
+      padding: 1.3rem 1.2rem 1.4rem;
+      border: 1px solid rgba(212, 175, 55, 0.16);
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.03);
+    }
+
+    .service-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .service-title {
+      font-size: 1.05rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .service-body {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 0.6rem;
+    }
+
+    .service-detail {
+      font-size: 0.86rem;
+      color: var(--text-main);
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+    }
+
+    .tag {
+      font-size: 0.72rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-pill);
+      background: var(--bg-soft);
+      border: 1px solid rgba(247, 205, 225, 0.9);
+      color: var(--text-muted);
+    }
+
+    .two-column {
+      display: grid;
+      gap: 2rem;
+      align-items: start;
+      margin-top: 1.8rem;
+    }
+
+    @media (min-width: 900px) {
+      .two-column {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      }
+    }
+
+    .steps-list {
+      display: grid;
+      gap: 1.1rem;
+    }
+
+    .step-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.9rem;
+      align-items: flex-start;
+    }
+
+    .step-number {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid rgba(212, 175, 55, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      background: radial-gradient(circle at 30% 0, var(--pink-soft), #ffffff);
+    }
+
+    .step-title {
+      font-size: 0.98rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .step-body {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .card-soft {
+      background: #fff;
+      border-radius: var(--radius-large);
+      border: 1px solid rgba(212, 175, 55, 0.18);
+      padding: 1.4rem 1.3rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .card-soft h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .card-soft p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 0.6rem;
+    }
+
+    .mini-metric {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      font-size: 0.86rem;
+      margin-top: 0.4rem;
+    }
+
+    .mini-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 0, var(--gold-soft), var(--pink));
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.6rem;
+      margin-top: 1.5rem;
+    }
+
+    .gallery-tile {
+      position: relative;
+      padding-top: 100%;
+      border-radius: 18px;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--pink-soft), #ffffff);
+      border: 1px solid rgba(212, 175, 55, 0.18);
+    }
+
+    .gallery-tile:nth-child(2),
+    .gallery-tile:nth-child(5) {
+      background: linear-gradient(135deg, #fdf5f9, var(--gold-soft));
+    }
+
+    .gallery-caption {
+      position: absolute;
+      left: 0.55rem;
+      bottom: 0.5rem;
+      right: 0.55rem;
+      font-size: 0.75rem;
+      color: var(--text-main);
+      background: rgba(255, 255, 255, 0.86);
+      padding: 0.3rem 0.5rem;
+      border-radius: 999px;
+      text-align: center;
+    }
+
+    .testimonials {
+      display: grid;
+      gap: 1.4rem;
+      margin-top: 1.8rem;
+    }
+
+    @media (min-width: 768px) {
+      .testimonials {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .testimonial-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 1.3rem 1.1rem;
+      border: 1px solid rgba(212, 175, 55, 0.16);
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
+      font-size: 0.9rem;
+      position: relative;
+    }
+
+    .testimonial-text {
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .testimonial-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .testimonial-meta {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .quote-mark {
+      position: absolute;
+      top: 0.7rem;
+      right: 1rem;
+      font-size: 2rem;
+      color: rgba(247, 205, 225, 0.9);
+    }
+
+    .about-grid {
+      display: grid;
+      gap: 2rem;
+      margin-top: 2rem;
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      .about-grid {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      }
+    }
+
+    .about-body {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      margin-bottom: 0.8rem;
+    }
+
+    .about-note {
+      font-size: 0.9rem;
+      color: var(--text-main);
+      font-style: italic;
+    }
+
+    .about-panel {
+      border-radius: var(--radius-large);
+      background: linear-gradient(145deg, var(--pink-soft), #ffffff);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      padding: 1.5rem;
+      box-shadow: var(--shadow-soft);
+      font-size: 0.9rem;
+    }
+
+    .about-panel h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .about-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .about-list li {
+      display: flex;
+      gap: 0.6rem;
+      margin-bottom: 0.5rem;
+      align-items: flex-start;
+    }
+
+    .about-list span {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .bullet {
+      font-size: 0.9rem;
+      color: var(--gold);
+    }
+
+    .contact-grid {
+      display: grid;
+      gap: 1.8rem;
+      margin-top: 1.8rem;
+    }
+
+    @media (min-width: 900px) {
+      .contact-grid {
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+      }
+    }
+
+    .contact-card {
+      border-radius: var(--radius-large);
+      background: #fff;
+      padding: 1.6rem 1.4rem;
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contact-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .contact-card p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 1.1rem;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .form-row {
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    @media (min-width: 600px) {
+      .form-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    label {
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.2rem;
+      display: inline-block;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      padding: 0.6rem 0.7rem;
+      font-family: inherit;
+      font-size: 0.9rem;
+      background: rgba(255, 255, 255, 0.96);
+      outline: none;
+      transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.25);
+      background: #fff;
+    }
+
+    .contact-info {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .contact-info h4 {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-main);
+    }
+
+    .contact-info p + p {
+      margin-top: 0.3rem;
+    }
+
+    footer {
+      border-top: 1px solid rgba(212, 175, 55, 0.18);
+      background: #fff;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1.4rem 1.5rem 1.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    @media (min-width: 768px) {
+      .footer-inner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-links a {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.75rem;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <nav class="nav">
+        <div class="logo-mark">
+          <div class="logo-icon">
+            <span>S</span>
+          </div>
+          <div>
+            <div class="logo-text-main">Savannah's Wedding</div>
+            <div class="logo-text-sub">Romantic &amp; Elegant Planning</div>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#portfolio">Gallery</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a href="#contact" class="btn nav-cta">
+          Inquire Now <span>✉︎</span>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="section hero" id="top">
+        <div>
+          <div class="eyebrow">
+            <div class="eyebrow-dot"></div>
+            Toronto &amp; GTA · Full-Service Wedding Planning
+          </div>
+          <h1 class="hero-title">
+            Romantic, <span class="hero-highlight">elegant</span> weddings
+            planned to the last detail.
+          </h1>
+          <p class="hero-text">
+            Savannah's Wedding offers full-service planning for couples who want a beautifully
+            curated celebration without the stress. You dream it—Savannah brings it gracefully to life.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn">
+              Schedule a Consultation <span>♡</span>
+            </a>
+            <a href="#services" class="btn btn-outline">
+              View Planning Services
+            </a>
+          </div>
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <span>Based In</span>
+              Toronto &amp; Greater Toronto Area
+            </div>
+            <div class="hero-meta-item">
+              <span>Style</span>
+              Romantic · Timeless · Elegant
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card">
+            <div class="hero-card-tagline">Your day, composed like a love letter</div>
+            <div class="hero-card-main">
+              From first look to final toast, every moment is designed to feel effortless, intentional, and entirely yours.
+            </div>
+            <div class="hero-card-strip">
+              ✦ Full-service planning for couples who want to be fully present—without worrying about timelines,
+              vendors, or logistics.
+            </div>
+            <div class="mini-metric">
+              <div class="mini-dot"></div>
+              <div>Vendor coordination, design direction, and day-of orchestration all thoughtfully handled.</div>
+            </div>
+            <div class="hero-badge">
+              Now booking 2026 dates
+            </div>
+          </div>
+
+          <div class="hero-floating-card">
+            “We felt so calm the entire day. Savannah handled everything with such care—it truly felt like a
+            dream.”
+            <br /><strong>— A &amp; J, Toronto</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="section" id="services">
+        <div class="section-heading">
+          <div class="section-kicker">Services</div>
+          <h2 class="section-title">Full-Service Wedding Planning</h2>
+          <p class="section-subtitle">
+            A comprehensive planning experience from “yes” to “I do,” tailored for couples
+            who want expert guidance, refined design, and seamless coordination across the Toronto &amp; GTA area.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-label">Phase I · Vision &amp; Foundation</div>
+            <h3 class="service-title">Story, Style &amp; Strategy</h3>
+            <p class="service-body">
+              We begin with a detailed consultation to understand your story, priorities, and aesthetic.
+              Savannah then crafts a cohesive vision, mood, and planning roadmap uniquely for you.
+            </p>
+            <p class="service-detail"><strong>Includes:</strong> budget guidance, date &amp; venue scouting, initial design direction.</p>
+            <div class="tag-list">
+              <span class="tag">Venue shortlisting</span>
+              <span class="tag">Budget framework</span>
+              <span class="tag">Custom moodboard</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-label">Phase II · Design &amp; Details</div>
+            <h3 class="service-title">Curated Weddings, Thoughtful Touches</h3>
+            <p class="service-body">
+              Savannah collaborates with trusted vendors to bring your vision into focus—florals,
+              stationery, décor, and all the romantic details that make your day feel like you.
+            </p>
+            <p class="service-detail"><strong>Includes:</strong> vendor recommendations &amp; booking support, design refinement, and timeline drafting.</p>
+            <div class="tag-list">
+              <span class="tag">Design direction</span>
+              <span class="tag">Vendor curation</span>
+              <span class="tag">Styling support</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-label">Phase III · Wedding Week</div>
+            <h3 class="service-title">Day-Of Orchestration</h3>
+            <p class="service-body">
+              In the final stretch, Savannah manages logistics, confirms vendors, oversees setup, and runs
+              the day-of timeline—so you can simply arrive, breathe, and enjoy every moment.
+            </p>
+            <p class="service-detail"><strong>Includes:</strong> detailed timeline, rehearsal coordination, full wedding-day management.</p>
+            <div class="tag-list">
+              <span class="tag">Timeline management</span>
+              <span class="tag">Rehearsal support</span>
+              <span class="tag">On-site coordination</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROCESS & GALLERY -->
+      <section class="section" id="portfolio">
+        <div class="two-column">
+          <div>
+            <div class="section-heading" style="text-align:left; margin-bottom:1.4rem;">
+              <div class="section-kicker">Planning Journey</div>
+              <h2 class="section-title" style="font-size:1.7rem;">How We’ll Work Together</h2>
+              <p class="section-subtitle" style="margin-left:0; margin-right:0;">
+                A calm, collaborative process with clear communication and gentle guidance at each step.
+              </p>
+            </div>
+
+            <div class="steps-list">
+              <div class="step-item">
+                <div class="step-number">01</div>
+                <div>
+                  <div class="step-title">Initial Consultation</div>
+                  <div class="step-body">
+                    A complimentary call or meeting to learn about your love story, your venue dreams,
+                    and what “perfect” feels like for you.
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-number">02</div>
+                <div>
+                  <div class="step-title">Custom Proposal</div>
+                  <div class="step-body">
+                    Savannah creates a tailored planning outline that reflects your priorities, guest count,
+                    and budget—no cookie-cutter packages.
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-number">03</div>
+                <div>
+                  <div class="step-title">Planning &amp; Design</div>
+                  <div class="step-body">
+                    Together, we refine your design direction, select vendors, and build a timeline that
+                    keeps everything organized and on track.
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-number">04</div>
+                <div>
+                  <div class="step-title">Wedding Day</div>
+                  <div class="step-body">
+                    Savannah is there before the first candle is lit and stays until the last hug goodnight,
+                    ensuring the entire day flows with ease.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="card-soft">
+            <h3>Visual Storytelling, Toronto &amp; Beyond</h3>
+            <p>
+              While each celebration is unique, your gallery will always feel timeless and deeply personal.
+              Think warm candlelight, soft pink florals, and elegant details that never go out of style.
+            </p>
+            <div class="gallery-grid">
+              <div class="gallery-tile">
+                <div class="gallery-caption">Intimate city soirées</div>
+              </div>
+              <div class="gallery-tile">
+                <div class="gallery-caption">Romantic golden-hour portraits</div>
+              </div>
+              <div class="gallery-tile">
+                <div class="gallery-caption">Soft pink floral tablescapes</div>
+              </div>
+              <div class="gallery-tile">
+                <div class="gallery-caption">Classic downtown venues</div>
+              </div>
+              <div class="gallery-tile">
+                <div class="gallery-caption">Garden-inspired ceremonies</div>
+              </div>
+              <div class="gallery-tile">
+                <div class="gallery-caption">Joyful dance-floor moments</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section">
+        <div class="section-heading">
+          <div class="section-kicker">Kind Words</div>
+          <h2 class="section-title">Love Notes from Couples</h2>
+        </div>
+
+        <div class="testimonials">
+          <article class="testimonial-card">
+            <div class="quote-mark">“</div>
+            <p class="testimonial-text">
+              “Savannah thought of details we never would have considered and handled them so gracefully.
+              We felt completely taken care of from start to finish.”
+            </p>
+            <div class="testimonial-name">E &amp; M</div>
+            <div class="testimonial-meta">Toronto · Summer wedding</div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="quote-mark">“</div>
+            <p class="testimonial-text">
+              “Our day ran flawlessly. Every vendor knew exactly where to be and when, and Savannah
+              kept the timeline on track without ever feeling rushed.”
+            </p>
+            <div class="testimonial-name">A &amp; J</div>
+            <div class="testimonial-meta">GTA · Classic ballroom celebration</div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="quote-mark">“</div>
+            <p class="testimonial-text">
+              “We wanted something romantic and elegant but still ‘us.’ Savannah translated our ideas
+              into a design that felt so authentic and magical.”
+            </p>
+            <div class="testimonial-name">L &amp; S</div>
+            <div class="testimonial-meta">Niagara region · Garden-inspired</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="section-heading">
+          <div class="section-kicker">Meet Savannah</div>
+          <h2 class="section-title">The Heart Behind the Details</h2>
+        </div>
+
+        <div class="about-grid">
+          <div>
+            <p class="about-body">
+              Savannah believes your wedding should feel like a beautifully written chapter in your story—full
+              of warmth, romance, and thoughtful details that reflect who you are as a couple.
+            </p>
+            <p class="about-body">
+              With a calm presence and an eye for elegant design, she guides you through each decision so the
+              planning process feels as joyful as the day itself.
+            </p>
+            <p class="about-note">
+              “My goal is always the same: for you to feel fully present—laughing with your guests,
+              holding your partner’s hand—not worrying about what’s happening behind the scenes.”
+            </p>
+          </div>
+
+          <aside class="about-panel">
+            <h3>What You Can Expect</h3>
+            <ul class="about-list">
+              <li>
+                <span class="bullet">✦</span>
+                <span>Intentional planning that honours your priorities and non-negotiables.</span>
+              </li>
+              <li>
+                <span class="bullet">✦</span>
+                <span>Clear communication and organized timelines you can actually understand.</span>
+              </li>
+              <li>
+                <span class="bullet">✦</span>
+                <span>Thoughtful vendor recommendations based on your style, budget, and venue.</span>
+              </li>
+              <li>
+                <span class="bullet">✦</span>
+                <span>A calm, reassuring presence on the wedding day—so you can simply be in the moment.</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="section-heading">
+          <div class="section-kicker">Inquire</div>
+          <h2 class="section-title">Let’s Begin Planning</h2>
+          <p class="section-subtitle">
+            Share a few details about your celebration, and Savannah will be in touch to schedule
+            a consultation and discuss full-service planning options.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Tell Us About Your Day</h3>
+            <!-- Replace action with your form handler or form service (e.g., Formspree) -->
+            <form class="contact-form" action="#" method="post">
+              <div class="form-row">
+                <div>
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" placeholder="First &amp; last name" required />
+                </div>
+                <div>
+                  <label for="partner">Partner's Name</label>
+                  <input type="text" id="partner" name="partner" placeholder="Partner's name" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                </div>
+                <div>
+                  <label for="date">Wedding Date</label>
+                  <input type="date" id="date" name="date" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div>
+                  <label for="location">Venue / Location</label>
+                  <input type="text" id="location" name="location" placeholder="Toronto / GTA venue" />
+                </div>
+                <div>
+                  <label for="guests">Guest Count</label>
+                  <input type="number" id="guests" name="guests" placeholder="Approximate number" />
+                </div>
+              </div>
+
+              <div>
+                <label for="heard">How did you hear about Savannah's Wedding?</label>
+                <input type="text" id="heard" name="heard" placeholder="Referral, Instagram, Google, etc." />
+              </div>
+
+              <div>
+                <label for="message">Share your vision</label>
+                <textarea id="message" name="message" placeholder="Tell Savannah about your style, colours, and what matters most to you."></textarea>
+              </div>
+
+              <button type="submit" class="btn" style="margin-top:0.4rem;">
+                Submit Inquiry <span>↗</span>
+              </button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <h4>Based in Toronto · Serving the GTA</h4>
+            <p>
+              Savannah's Wedding is proudly based in Toronto and happily serves couples
+              throughout the Greater Toronto Area and nearby regions.
+            </p>
+            <p><strong>Availability:</strong> Now booking select 2026 dates.</p>
+            <p><strong>Services:</strong> Full-service wedding planning &amp; day-of orchestration.</p>
+            <p style="margin-top:0.8rem;">
+              Prefer to reach out directly?<br />
+              You can connect via email or your favourite social platform once your links are added here.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div>© <span id="year"></span> Savannah's Wedding · Toronto &amp; GTA</div>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Inquire</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
